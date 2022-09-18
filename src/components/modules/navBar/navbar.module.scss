@@ -1,0 +1,57 @@
+// @use "styles/constants" as const;
+@import "src/sass/_variables.scss";
+
+.container {
+  height: 190px;
+  width: 100%;
+  // padding: 10px 20%;
+  background-color: aquamarine;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  &_top {
+    padding: 0 5%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    &_item {
+      color: #a3a3a3;
+      padding-right: 20px;
+    }
+  }
+  &_mid {
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_navi{
+        display: flex;
+        width: 50%;
+        &_logo{
+            width: 400px;
+            margin: -35px;
+        }
+    }
+    &_box {
+      display: flex;
+      &_item{
+        padding: 10px 20px;
+        border: 2px solid $main-color;
+        border-radius: 20px;
+        margin-right: 30px;
+        height: 80px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.border {
+  height: 1px;
+  border-top: 1px solid #a3a3a3;
+}
+
+.border_vertical {
+  width: 1px;
+  border-right: 1px solid red;
+}
